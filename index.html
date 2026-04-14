@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:title" content="Economical Bubble AI — Smarter RAM Management" />
+    <meta property="og:description" content="A presentation on intelligent memory appreciation and resource management in modern AI infrastructure." />
+    <meta property="og:image" content="ссылка_на_красивый_скриншот_первого_слайда.jpg" />
+    <meta property="og:url" content="https://твой-github-аккаунт.github.io/твой-репозиторий/" />
+    <meta name="theme-color" content="#0f172a" /> ```
+    <title>Economical Bubble AI & RAM Appreciation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+<div class="ui-panel">
+    <button onclick="startDemo()">▶ Start Demo</button>
+    <button onclick="toggleAuto()">⏩ Auto Play</button>
+    <button onclick="goTo(1)">🔄 Restart</button>
+    <button onclick="toggleQA()">❓ Q&A Mode</button>
+</div>
+
+<canvas id="bgCanvas"></canvas>
+
+<div class="slide-counter" id="slideCounter">1 / 15</div>
+
+<div class="progress-bar-container">
+    <div class="progress-bar" id="progressBar"></div>
+</div>
+
+<div class="presentation" id="presentation">
+
+    <div class="slide active" id="slide-1" data-slide="1">
+        <div class="slide-bg gradient-1"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="slide-content center-content">
+            <div class="badge" data-aos="fade-down">AI Infrastructure · 2025</div>
+            <h1 class="hero-title" data-aos="fade-up">
+                Economical<br/>
+                <span class="gradient-text">Bubble AI</span>
+            </h1>
+            <div class="subtitle-line" data-aos="fade-up" data-aos-delay="100">Memory Appreciation (RAM)</div>
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">Smarter Resource Management</p>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="300">
+                <span class="note-icon">🎙</span>
+                <em>As our industry continues to evolve, we must embrace change and seize opportunities. Today we'll discuss how AI can become more efficient in using memory and computing resources.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-2" data-slide="2">
+        <div class="slide-bg gradient-2"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="speaker-card">
+                    <div class="avatar">KJ</div>
+                    <div class="speaker-info">
+                        <h2 class="speaker-name">Zhandar Turarov, Chyngyz Baibosunov</h2>
+                        <div class="speaker-role">The Terminator and AI engineer</div>
+                        <div class="slide-desc">AI & Infrastructure Enthusiast</div>
+
+                        <p class="speaker-tag">
+                            This presentation is based on experiments and conceptual models developed during our work on AI infrastructure optimization systems.
+                        </p>
+                    </div>
+                    <div class="speaker-details">
+                        <div class="detail-item"><span class="dot"></span> 3 years in Ala-Too college</div>
+                        <div class="detail-item"><span class="dot"></span> AI Systems Advocate</div>
+                        <div class="detail-item"><span class="dot"></span> Infrastructure Optimization</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="slide-label">About Speaker</div>
+                <h2 class="slide-title">Meet Your <span class="gradient-text">Presenter</span></h2>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>For those who haven't met me yet, I'm Zhandar Turarov, the Terminator. Let me start with a few words about my background.</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-3" data-slide="3">
+        <div class="slide-bg gradient-3"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">Before We Begin</div>
+            <h2 class="slide-title" data-aos="fade-up">Organizational <span class="gradient-text">Notes</span></h2>
+            <div class="icon-cards" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-card">
+                    <div class="icon-card-icon">📋</div>
+                    <div class="icon-card-text">Materials Included</div>
+                    <div class="icon-card-sub">All stats in the handout</div>
+                </div>
+                <div class="icon-card">
+                    <div class="icon-card-icon">🔇</div>
+                    <div class="icon-card-text">Mute Microphones</div>
+                    <div class="icon-card-sub">Until Q&A session</div>
+                </div>
+                <div class="icon-card">
+                    <div class="icon-card-icon">❓</div>
+                    <div class="icon-card-text">Q&A at the End</div>
+                    <div class="icon-card-sub">Save questions for last</div>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>Please mute your microphones. Don't worry about notes — I've put all statistics in a handout which I'll share in the chat.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-4" data-slide="4">
+        <div class="slide-bg gradient-4"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="slide-label">Overview</div>
+                <h2 class="slide-title">Today's <span class="gradient-text">Agenda</span></h2>
+                <p class="slide-desc">Here's a bird's eye view of what we'll cover.</p>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>Here's a bird's eye view of our agenda today.</em>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="agenda-list">
+                    <div class="agenda-item"><span class="agenda-num">01</span><span class="agenda-text">Problem Statement: AI Memory Inefficiency</span></div>
+                    <div class="agenda-item"><span class="agenda-num">02</span><span class="agenda-text">Bubble AI Architecture Overview</span></div>
+                    <div class="agenda-item"><span class="agenda-num">03</span><span class="agenda-text">Memory Appreciation Theory</span></div>
+                    <div class="agenda-item"><span class="agenda-num">04</span><span class="agenda-text">System Design & Architecture</span></div>
+                    <div class="agenda-item"><span class="agenda-num">05</span><span class="agenda-text">Real-World Applications</span></div>
+                    <div class="agenda-item"><span class="agenda-num">06</span><span class="agenda-text">Limitations & Future Work</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-5" data-slide="5">
+        <div class="slide-bg gradient-5"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">The Challenge</div>
+            <h2 class="slide-title" data-aos="fade-up">The <span class="gradient-text">Problem</span></h2>
+            <div class="problem-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="problem-card">
+                    <div class="problem-icon">📈</div>
+                    <h3>The KV Cache Bottleneck</h3>
+                    <p>For 32 concurrent requests (8K context), the memory cache of Llama-3-70B alone consumes 82 GB of VRAM—more than a single top-tier A100 GPU can hold.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">💸</div>
+                    <h3>Up to 80% Memory Waste</h3>
+                    <p>Traditional systems allocate memory in contiguous chunks for the maximum context length. Due to internal fragmentation, up to 80% of expensive memory simply sits idle.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">⚙️</div>
+                    <h3>Redundant Computation</h3>
+                    <p>Without dynamic isolation, identical system prompts and context are recalculated from scratch for every new agent, crippling throughput.</p>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>Modern AI systems consume massive amounts of VRAM, primarily due to linearly growing KV caches and inefficient static allocation.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-6" data-slide="6">
+        <div class="slide-bg gradient-2"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="slide-label">Research Findings</div>
+                <h2 class="slide-title">
+                    Memory Usage <span class="gradient-text">Observations</span>
+                </h2>
+                <p class="slide-desc">
+                    In modern AI systems, memory consumption patterns are often inefficient due to continuous allocation of intermediate data and a lack of structured memory lifecycle management.
+                </p>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>
+                        These observations map directly to the challenges faced when scaling foundational models in production environments.
+                    </em>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="chart-container" style="background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 16px; padding: 20px 10px; width: 100%; box-shadow: inset 0 0 20px rgba(0,0,0,0.2);">
+                    <canvas id="ramChart" style="width: 100%; display: block;"></canvas>
+                </div>
+
+                <div class="stat-cards" style="margin-top: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div class="stat-card" style="padding: 15px;">
+                        <div class="stat-icon" style="font-size: 1.5rem; margin-bottom: 5px;">🔥</div>
+                        <div style="font-size: 0.9rem; font-weight: 600;">80GB Ceiling</div>
+                        <div class="stat-sub" style="font-size: 0.8rem;">Standard models quickly max out VRAM due to linear KV cache growth.</div>
+                    </div>
+                    <div class="stat-card" style="padding: 15px;">
+                        <div class="stat-icon" style="font-size: 1.5rem; margin-bottom: 5px;">✨</div>
+                        <div style="font-size: 0.9rem; font-weight: 600;">45GB Stable</div>
+                        <div class="stat-sub" style="font-size: 0.8rem;">Bubble AI evicts dead context, keeping memory usage flat and predictable.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-7" data-slide="7">
+        <div class="slide-bg gradient-6"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">The Solution</div>
+            <h2 class="slide-title" data-aos="fade-up"><span class="gradient-text">Bubble AI</span> Framework</h2>
+            <p class="slide-desc">
+                Bubble AI introduces a modular memory management paradigm where computational resources are isolated into dynamic execution bubbles.
+            </p>
+            <div class="feature-list" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-item">
+                    <div class="feature-num">01</div>
+                    <div class="feature-content">
+                        <h3>Dynamic Memory Bubbles</h3>
+                        <p>Isolated memory containers created and destroyed on demand</p>
+                    </div>
+                    <div class="feature-bar"></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-num">02</div>
+                    <div class="feature-content">
+                        <h3>Task-Isolated Environments</h3>
+                        <p>Each task runs in a self-contained bubble preventing memory leakage</p>
+                    </div>
+                    <div class="feature-bar"></div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-num">03</div>
+                    <div class="feature-content">
+                        <h3>Auto-Scaling Memory</h3>
+                        <p>Resources scale automatically based on real-time demand signals</p>
+                    </div>
+                    <div class="feature-bar"></div>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>We apply architectural principles similar to PagedAttention—isolating, measuring, and dynamically scaling memory blocks rather than using monolithic allocations.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-8" data-slide="8">
+        <div class="slide-bg gradient-1"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="slide-label">Core Concept: Adaptive Retention</div>
+                <h2 class="slide-title">Memory <span class="gradient-text">Appreciation</span></h2>
+                <p class="slide-desc">Not all tokens and data are equally valuable. The system dynamically evaluates the "weight" of information, applying aggressive eviction policies to free up resources.</p>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>We utilize adaptive quantization and LRU architectures. Crucial "Heavy Hitter" tokens stay in high-res cache, while low-value context is compressed or evicted.</em>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="memory-pyramid">
+                    <div class="pyramid-level high">
+                        <span>🔥</span>
+                        <span>High-Value Data</span>
+                    </div>
+                    <div class="pyramid-level mid">
+                        <span>⚡</span>
+                        <span>Important Data</span>
+                        <span class="pyramid-action">Prioritize</span>
+                    </div>
+                    <div class="pyramid-level low">
+                        <span>🗑️</span>
+                        <span>Low-Value Data</span>
+                        <span class="pyramid-action">Evict / Compress</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-9" data-slide="9">
+        <div class="slide-bg gradient-3"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">Process</div>
+            <h2 class="slide-title" data-aos="fade-up">How It <span class="gradient-text">Works</span></h2>
+            <div class="flow-diagram" data-aos="fade-up" data-aos-delay="100">
+                <div class="flow-step">
+                    <div class="flow-icon">🫧</div>
+                    <div class="flow-label">Create Bubble</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">💎</div>
+                    <div class="flow-label">Assign Value</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">⚡</div>
+                    <div class="flow-label">Optimize RAM</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-icon">🗑️</div>
+                    <div class="flow-label">Delete Low-Value</div>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>Memory is dynamically allocated, evaluated, and optimized in real time through this continuous cycle.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-10" data-slide="10">
+        <div class="slide-bg gradient-4"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">Applications</div>
+            <h2 class="slide-title" data-aos="fade-up">Real-World <span class="gradient-text">Use Cases</span></h2>
+            <div class="use-case-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="use-case-card">
+                    <div class="uc-icon">🤖</div>
+                    <h3>Multi-Agent Swarms</h3>
+                    <p>Shared memory "bubble" trees (Radix/Prefix Caching) allow agents to reuse a single system prompt, reducing prefill latency by 60%.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="uc-icon">🔲</div>
+                    <h3>Edge AI & Computer Vision</h3>
+                    <p>Running continuous tracking (e.g., real-time vehicle classification) on RAM-constrained boards requires strict isolation and instant frame eviction.</p>
+                </div>
+                <div class="use-case-card">
+                    <div class="uc-icon">📊</div>
+                    <h3>Long-Horizon Planning</h3>
+                    <p>Instead of storing massive canvases of raw text, robots and analytics systems store only compressed KV-representations of the most critical past actions.</p>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>This is especially critical in domains like real-time computer vision and Edge AI, where memory limits are a hard ceiling.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-11" data-slide="11">
+        <div class="slide-bg gradient-5"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="slide-label">Honest Assessment</div>
+                <h2 class="slide-title">Known <span class="gradient-text">Limitations</span></h2>
+                <p class="slide-desc">We acknowledge current challenges on the path to full adoption.</p>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>There's more to learn, but let's address key limitations before moving to practical implementation.</em>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="limit-list">
+                    <div class="limit-item risk-high">
+                        <div class="limit-icon">🔧</div>
+                        <div>
+                            <h3>Complexity</h3>
+                            <p>Requires sophisticated orchestration and low-level memory monitoring systems</p>
+                        </div>
+                    </div>
+                    <div class="limit-item risk-med">
+                        <div class="limit-icon">⚠️</div>
+                        <div>
+                            <h3>Risk of Data Loss</h3>
+                            <p>Overly aggressive bubble eviction may delete tokens still needed for long-term context</p>
+                        </div>
+                    </div>
+                    <div class="limit-item risk-low">
+                        <div class="limit-icon">🐌</div>
+                        <div>
+                            <h3>Overhead</h3>
+                            <p>The management layer itself adds computational cost at very small scales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-12" data-slide="12">
+        <div class="slide-bg gradient-6"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="slide-content center-content">
+            <div class="tech-pause-icon" data-aos="fade-up">⏸</div>
+            <h2 class="slide-title" data-aos="fade-up">Technical <span class="gradient-text">Check</span></h2>
+            <p class="slide-desc" data-aos="fade-up" data-aos-delay="100">Brief pause while this gets resolved</p>
+            <div class="pause-tip" data-aos="fade-up" data-aos-delay="200">
+                <span>💡</span> Feel free to write down any questions in the meantime
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="300">
+                <span class="note-icon">🎙</span>
+                <em>Let's take a brief pause while this gets resolved. Feel free to write down any questions.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-13" data-slide="13">
+        <div class="slide-bg gradient-1"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content two-col">
+            <div class="col-left" data-aos="fade-right">
+                <div class="slide-label">Transition</div>
+                <h2 class="slide-title">Next: <span class="gradient-text">Implementation</span></h2>
+                <p class="slide-desc">Handing over to our implementation lead for the next section.</p>
+                <div class="speech-note">
+                    <span class="note-icon">🎙</span>
+                    <em>I'll stop here and let Chyngyz continue with the implementation phase.</em>
+                </div>
+            </div>
+            <div class="col-right" data-aos="fade-left">
+                <div class="transition-card">
+                    <div class="transition-from">
+                        <div class="t-avatar">KJ</div>
+                        <span>Zhandar Turarov</span>
+                        <span class="t-role">Terminator</span>
+                    </div>
+                    <div class="transition-arrow">→</div>
+                    <div class="transition-to">
+                        <div class="t-avatar" style="background: linear-gradient(135deg, #a855f7, #ec4899)">CB</div>
+                        <span>Chyngyz Baibosunov</span>
+                        <span class="t-role">AI Engineer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-14" data-slide="14">
+        <div class="slide-bg gradient-4"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="slide-content center-content">
+            <div class="slide-label" data-aos="fade-down">Key Takeaways</div>
+            <h2 class="slide-title" data-aos="fade-up">The <span class="gradient-text">Conclusion</span></h2>
+            <div class="conclusion-grid" data-aos="fade-up" data-aos-delay="100">
+                <div class="conclusion-card">
+                    <div class="cc-icon">💰</div>
+                    <h3>RAM = Economic Resource</h3>
+                    <p>Memory must be treated as finite, valuable capital — not an endless commodity</p>
+                </div>
+                <div class="conclusion-card">
+                    <div class="cc-icon">🧠</div>
+                    <h3>Smarter AI Systems</h3>
+                    <p>AI should intelligently manage memory eviction policies, not just process text/data</p>
+                </div>
+                <div class="conclusion-card">
+                    <div class="cc-icon">📉</div>
+                    <h3>Lower Costs</h3>
+                    <p>Optimized context mapping leads to tangible cloud and infrastructure savings</p>
+                </div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="200">
+                <span class="note-icon">🎙</span>
+                <em>AI should not just process data — it should manage its internal resources intelligently.</em>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-15" data-slide="15">
+        <div class="slide-bg gradient-2"></div>
+        <div class="bubble-deco b1"></div>
+        <div class="bubble-deco b2"></div>
+        <div class="bubble-deco b3"></div>
+        <div class="bubble-deco b4"></div>
+        <div class="slide-content center-content">
+            <h2 class="hero-title" data-aos="fade-up">Thank <span class="gradient-text">You</span></h2>
+            <div class="subtitle-line" data-aos="fade-up" data-aos-delay="100">Questions & Answers</div>
+            <div class="qa-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="qa-icon">❓</div>
+                <p>This wraps up the presentation. The floor is now open for any remaining questions or comments.</p>
+            </div>
+            <div class="contact-row" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-chip">Zhandar Turarov — The Terminator</div>
+                <div class="contact-chip">Chyngyz Baibosunov — AI Engineer</div>
+            </div>
+            <div class="speech-note" data-aos="fade-up" data-aos-delay="400">
+                <span class="note-icon">🎙</span>
+                <em>This wraps up our presentation. We will now open the floor to any remaining questions or comments.</em>
+            </div>
+        </div>
+    </div>
+
+</div><div class="nav-controls">
+    <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)" title="Previous Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="slide-dots" id="slideDots"></div>
+    <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)" title="Next Slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+    </button>
+</div>
+
+<div class="keyboard-hint">← → Arrow Keys to Navigate</div>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: false,
+      mirror: true
+    });
+</script>
+</body>
+</html>
